@@ -2,37 +2,35 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.recipe-picture{
+height:350px;
+width:420px;
+object-fit:cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.recipe-name{
+font-size:48px;
+padding:6px;
+margin:18px;
+font-family: 'Poppins', sans-serif;
+}
+.recipe-container{
+background-color:grey;
+overflow:hidden;
+border-radius:50px;
+box-shadow:whitesmoke; 
+transition: 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.recipe-container:hover{
+transform:scale(1.1);
+}
+.recipe-list-container{
+display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap:30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+body{
+background-color: whitesmoke}
